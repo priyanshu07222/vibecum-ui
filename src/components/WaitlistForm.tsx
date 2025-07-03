@@ -158,7 +158,7 @@ export function WaitlistForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row w-full gap-3 sm:gap-4">
       <input
         type="email"
         value={email}
@@ -168,15 +168,16 @@ export function WaitlistForm() {
         disabled={isSubmitting}
         className="flex-1 px-4 py-3 rounded-lg bg-zinc-900 border border-zinc-800 text-white placeholder:text-zinc-500 
                  focus:outline-none focus:ring-2 focus:ring-zinc-700 focus:border-transparent transition-all
-                 disabled:opacity-50 disabled:cursor-not-allowed"
+                 disabled:opacity-50 disabled:cursor-not-allowed text-base sm:text-lg w-full"
       />
       <motion.button
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         type="submit"
         disabled={isSubmitting}
-        className="px-8 py-3 rounded-lg bg-white text-black font-medium hover:bg-zinc-200 
-                 disabled:opacity-50 disabled:hover:bg-white transition-colors disabled:cursor-not-allowed"
+        className="px-6 sm:px-8 py-3 rounded-lg bg-white text-black font-medium hover:bg-zinc-200 
+                 disabled:opacity-50 disabled:hover:bg-white transition-colors disabled:cursor-not-allowed
+                 text-base sm:text-lg whitespace-nowrap w-full sm:w-auto"
       >
         {isSubmitting ? 'Joining...' : 'Join Waitlist'}
       </motion.button>
