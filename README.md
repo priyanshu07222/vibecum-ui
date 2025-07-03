@@ -1,10 +1,10 @@
 # Vibecum 🌟
 
-Where the vibes are strong... and the climax is community.
+Where the vibes are strong... and the climax 💦 is community.
 
 ## About
 
-Vibecum is an exclusive social platform designed for those who seek genuine connections, shared experiences, and unfiltered moments. It's where authenticity meets intimacy, creating a space where users can be their true selves while building meaningful relationships.
+Vibecum is an exclusive social platform designed for those who seek genuine connections, want to vibe with friends, and share unfiltered moments. It's where authenticity meets intimacy, creating a space where users can be their true selves while building meaningful relationships.
 
 ## Features
 

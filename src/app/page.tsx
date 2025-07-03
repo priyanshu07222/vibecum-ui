@@ -30,7 +30,7 @@ export default function Home() {
           <div className="space-y-4">
             <p className="text-2xl md:text-3xl text-zinc-200 font-medium leading-relaxed">
               <span className="md:inline block">Where the vibes are strong... </span>
-              <span className="md:inline block">and the climax is community.</span>
+              <span className="md:inline block">and the climax 💦 is community.</span>
             </p>
             
             <p className="text-lg md:text-xl text-zinc-400 font-medium tracking-wide">
