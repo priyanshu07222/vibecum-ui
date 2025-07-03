@@ -7,13 +7,13 @@ import { SparklesIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center">
+    <main className="min-h-screen bg-black text-white flex items-start justify-center">
       <Toaster position="top-center" />
       
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/50 via-black to-black pointer-events-none" />
       
-      <div className="relative container mx-auto px-4 py-12 flex flex-col items-center text-center gap-16">
+      <div className="relative container mx-auto px-4 mt-[20vh] flex flex-col items-center text-center gap-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,37 +46,6 @@ export default function Home() {
           className="w-full flex justify-center"
         >
           <WaitlistForm />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto w-full"
-        >
-          {[
-            {
-              title: "Pure Connections",
-              description: "Find your tribe. Build real connections. No filters needed. 🖤"
-            },
-            {
-              title: "Safe & Discreet",
-              description: "Your vibe, your rules. Privacy is our promise. 🤫"
-            },
-            {
-              title: "Vibe Together",
-              description: "Because good times are better shared. Always. ✨"
-            }
-          ].map((feature, i) => (
-            <motion.div
-              key={i}
-              whileHover={{ scale: 1.02 }}
-              className="p-8 rounded-xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-zinc-700 transition-colors"
-            >
-              <h3 className="text-xl font-semibold mb-3 text-zinc-200">{feature.title}</h3>
-              <p className="text-zinc-400">{feature.description}</p>
-            </motion.div>
-          ))}
         </motion.div>
       </div>
     </main>
